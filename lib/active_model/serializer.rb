@@ -156,7 +156,7 @@ module ActiveModel
     def initialize(object, options = {})
       @object     = object
       @options    = options
-      @root       = options[:root] || (self.class._root ? self.class.root_name : false)
+      @root       = options[:root] || (self.class._root ? self.class.root_name : nil)
       @meta       = options[:meta]
       @meta_key   = options[:meta_key]
       @scope      = options[:scope]
